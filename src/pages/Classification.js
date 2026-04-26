@@ -3,7 +3,7 @@ import Navbar from "../Components/Navigation";  // 👈 add this
 import InputForm from "../Components/Classification/InputForm";
 import PredictionCards from "../Components/Classification/PredictionCards";
 import ChartsDashboard from "../Components/Classification/ChartsDashboard";
-import MetricsDashboard from "../Components/Classification/MetricsDashboard";
+
 function Classification() {
   const [predictions, setPredictions] = useState(null);
 
