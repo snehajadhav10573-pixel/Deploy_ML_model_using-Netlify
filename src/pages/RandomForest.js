@@ -18,7 +18,7 @@ function RandomForest() {
 
       setSelectedConfig(config); // ✅ store selected columns
 
-      const res = await fetch("http://web-production-7b983.up.railway.app/LR_RF", {
+      const res = await fetch("https://web-production-7b983.up.railway.app/LR_RF", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -35,7 +35,7 @@ function RandomForest() {
 
       const output = await res.json();
       setResult(output);
-      const overallRes = await fetch("http://web-production-7b983.up.railway.app/overall-rf-accuracy", {
+      const overallRes = await fetch("https://web-production-7b983.up.railway.app/overall-rf-accuracy", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
