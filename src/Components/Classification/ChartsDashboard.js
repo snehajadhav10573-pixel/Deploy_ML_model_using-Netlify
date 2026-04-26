@@ -13,7 +13,7 @@ function ChartsDashboard() {
   const [showSummary, setShowSummary] = useState(false);
 
   useEffect(() => {
-    fetch("http://web-production-7b983.up.railway.app/metrics")
+    fetch("https://web-production-7b983.up.railway.app/metrics")
       .then(res => res.json())
       .then(res => setData(res));
   }, []);
