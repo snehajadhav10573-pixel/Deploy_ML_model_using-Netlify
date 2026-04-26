@@ -5,7 +5,7 @@ function MetricsDashboard() {
   const [metrics, setMetrics] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/metrics")
+    fetch("https://web-production-7b983.up.railway.app/metrics")
       .then((res) => res.json())
       .then((data) => setMetrics(data))
       .catch((err) => console.log(err));
