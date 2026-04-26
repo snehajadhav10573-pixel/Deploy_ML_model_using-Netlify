@@ -1,0 +1,259 @@
+/* ── Arrow (same as LinearReg) ─────────────────────────── */
+#arrow {
+  position: fixed;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  color: #af8cfa;
+  cursor: pointer;
+  z-index: 9999;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+#arrow:hover {
+  transform: translateX(-50%) translateY(-5px) scale(1.1);
+  color: #fffefe;
+}
+@keyframes float {
+  0%   { transform: translateX(-50%) translateY(0); }
+  50%  { transform: translateX(-50%) translateY(-8px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+#arrow i {
+  font-size: 30px;
+  animation: float 2s infinite ease-in-out;
+}
+
+/* ── RF Input Card ─────────────────────────────────────── */
+#rf-input {
+  background-color: #0f0f1a9f;
+  margin: 15px;
+  padding: 30px 50px;
+  border-radius: 12px;
+}
+
+/* ── Forest Info Cards (mirrors #formulas) ─────────────── */
+#rf-info {
+  background: linear-gradient(135deg, #0a3b2e, #145a3c, #1e7a52);
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 28px;
+  border-radius: 16px;
+  flex-wrap: wrap;
+}
+
+.rf-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  width: 280px;
+  backdrop-filter: blur(10px);
+  transition: 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.rf-item:hover {
+  transform: translateY(-8px) scale(1.03);
+  border: 1px solid #52e09b;
+  box-shadow: 0 0 20px rgba(82, 224, 155, 0.35);
+}
+.rf-item h3 {
+  color: #a7f3d0;
+  font-weight: 780;
+  font-size: 18px;
+}
+.rf-item p {
+  color: #EAEAF0;
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 650;
+}
+
+/* Icon colours for RF */
+.icon-green  { color: #00C853; }
+.icon-amber  { color: #FFB300; }
+.icon-teal   { color: #00BCD4; }
+
+/* ── Column / Config Section ───────────────────────────── */
+#rf-columns {
+  margin-top: 30px;
+  background: #0d1a14;
+  padding: 20px;
+  border-radius: 10px;
+  color: #86efac;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #16a34a;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 🔥 3 columns */
+  grid-auto-rows: auto; /* 🔥 auto rows */
+
+  gap: 30px;
+  font-weight: 700;
+  justify-items: center; /* center items horizontally */
+  align-items: center;   /* center items vertically */
+}
+
+#rf-columns select,
+#rf-columns input[type="number"] {
+  background: rgba(255, 255, 255, 0.05);
+  color: #EAEAF0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  outline: none;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: 0.3s ease;
+  min-width: 220px;
+  margin: 0 12px;
+  text-align: center;
+}
+#rf-columns select:hover,
+#rf-columns input[type="number"]:hover {
+  border-color: #52e09b;
+  box-shadow: 0 0 8px rgba(82, 224, 155, 0.35);
+}
+#rf-columns select:focus,
+#rf-columns input[type="number"]:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 12px rgba(22, 163, 74, 0.5);
+}
+#rf-columns select option {
+  background-color: #0d1a14;
+  color: #EAEAF0;
+}
+
+/* ── RF Submit Button ──────────────────────────────────── */
+.rf-submit-btn {
+  text-align: center;
+}
+.rf-submit-btn button {
+  background: #ffffffcf;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 1390px;
+  transition: 0.4s ease;
+  box-shadow: 0 4px 12px rgba(82, 224, 155, 0.25);
+}
+.rf-submit-btn button:hover {
+  background: white;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 14px rgba(82, 224, 155, 0.45);
+}
+.rf-submit-btn button:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* ── RF Output ─────────────────────────────────────────── */
+#rf-output {
+  background-color: #0f0f1a9f;
+  margin: 15px;
+  padding: 30px 50px;
+  border-radius: 12px;
+  color: #EAEAF0;
+}
+
+#rf-metrics {
+  background: linear-gradient(135deg, #0a3b2e, #145a3c, #1e7a52);
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 28px;
+  border-radius: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.rf-metric-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 180px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.4s ease;
+}
+.rf-metric-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  border-color: #52e09b;
+  box-shadow: 0 0 18px rgba(82, 224, 155, 0.3);
+}
+.rf-metric-card h4 {
+  color: #a7f3d0;
+  margin: 0 0 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.rf-metric-card span {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* Confusion Matrix table */
+.rf-confusion-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.rf-confusion-table th,
+.rf-confusion-table td {
+  border: 1px solid #16a34a;
+  padding: 10px 16px;
+  text-align: center;
+  color: #EAEAF0;
+}
+.rf-confusion-table th {
+  background: rgba(22, 163, 74, 0.25);
+  color: #86efac;
+  font-weight: 700;
+}
+.rf-confusion-table tr:hover td {
+  background: rgba(82, 224, 155, 0.07);
+}
+
+/* Feature importance bar chart */
+.rf-importance-bar-wrap {
+  margin: 8px 0;
+}
+.rf-importance-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #a7f3d0;
+  margin-bottom: 4px;
+}
+.rf-importance-bar-bg {
+  background: rgba(255,255,255,0.08);
+  border-radius: 6px;
+  overflow: hidden;
+  height: 14px;
+}
+.rf-importance-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #16a34a, #52e09b);
+  border-radius: 6px;
+  transition: width 0.8s ease;
+}
+
+/* Section headings inside output */
+#rf-output h2 {
+  color: #86efac;
+  font-size: 22px;
+  border-bottom: 1px solid #16a34a;
+  padding-bottom: 8px;
+  margin-top: 30px;
+}

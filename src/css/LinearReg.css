@@ -1,0 +1,30 @@
+#arrow {
+  position: fixed;          /* stays in place while scrolling */
+  bottom: 2px;             /* distance from bottom */
+  left: 50%;                /* center horizontally */
+  transform: translateX(-50%); /* shift to center */
+  font-size: 50px;          /* arrow size */
+  color: #af8cfa;           /* light red color */
+  cursor: pointer;
+  z-index: 9999;       /* stays above everything */
+  
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+#arrow:hover {
+  transform: translateX(-50%) translateY(-5px) scale(1.1);
+  color: #fffefe;
+}
+
+/* Optional floating animation */
+@keyframes float {
+  0% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-8px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+#arrow i {
+    font-size: 30px;
+    animation: float 2s infinite ease-in-out;
+}

@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  background: #060c12;
+  font-family: Arial, sans-serif;
+}
+
+/* Wrapper takes full width */
+.form-wrapper {
+  width: 100%;
+  padding: 30px;
+  color: white;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00c8ff;
+  font-size: 28px;
+}
+
+/* GRID layout (horizontal) */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: end;
+}
+
+/* Input block */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #9aa4b2;
+}
+
+/* Input styling */
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #1f2a36;
+  background: #0d1117;
+  color: white;
+  outline: none;
+}
+
+input:focus {
+  border-color: #00c8ff;
+}
+
+/* Button */
+.predict-btn {
+  grid-column: 1 / -1;   /* take full row */
+  
+  display: block;        /* important */
+  margin: 20px auto;     /* THIS centers it */
+
+  width: 200px;
+  height: 42px;
+
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ffd700, #ffb300); /* yellow */
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.predict-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00c8ff;
+}
+
+/* Responsive (important!) */
+@media (max-width: 900px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Error input (red border) */
+.error-input {
+  border: 1px solid #ff4d4d !important;
+  box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+}
+
+/* Error text */
+.error-text {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+/* Tooltip container */
+.tooltip {
+  margin-left: 8px;
+  position: relative;
+  cursor: pointer;
+  color: #00c8ff;
+  font-size: 12px;
+}
+
+/* Tooltip text */
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Disabled button */
+.predict-btn:disabled {
+  color: #333;
+  cursor: not-allowed;
+}

@@ -1,0 +1,38 @@
+.summary-card {
+  margin-top: 30px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  max-width: 600px;
+}
+
+.summary-card h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Sections */
+.summary-section {
+  margin-bottom: 20px;
+}
+
+.summary-section h3 {
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.summary-section p {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.summary-section ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.summary-section li {
+  margin: 5px 0;
+}

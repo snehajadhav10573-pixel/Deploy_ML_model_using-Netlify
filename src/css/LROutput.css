@@ -1,0 +1,95 @@
+/* Wrapper */
+.equation {
+  margin-top: 20px;
+   background: linear-gradient(135deg, #3B0A6B, #6A1B9A, #8E24AA);
+}
+
+/* No data */
+.nodata {
+  text-align: center;
+  color: #FF6B6B;
+  font-size: 30px;
+  padding: 10px;
+}
+
+/* Flex layout */
+.Opcontainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom:30px;
+}
+
+/* Card style */
+.op-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 12px;
+  text-align:center;
+  width: 280px;
+  backdrop-filter: blur(10px);
+  transition: 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.267);
+}
+
+/* Glow border effect on hover */
+.op-card:hover {
+  
+  transform: translateY(-8px) scale(1.03);
+  border: 1px solid #B388FF;
+  box-shadow: 0 0 20px rgba(179, 136, 255, 0.4);
+
+}
+
+/* Shine effect (optional premium look) */
+
+
+
+/* Title */
+.op-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #E9D5FF;
+}
+
+/* Value */
+.op-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+/* Equation styling */
+.op-equation {
+  font-size: 18px;
+  font-weight: bold;
+  color: #DDD6FE;
+}
+
+/* Icon */
+.icon-success {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #C4B5FD;
+}
+
+.op-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 27px;
+  font-weight: 600;
+  color: #E9D5FF;
+
+  /* Gradient text effect */
+ 
+
+}
+
+/* Icon spacing */
+.op-heading i {
+  margin-right: 8px;
+  font-size: 27px;
+  color:rgb(5, 171, 5);
+}

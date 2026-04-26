@@ -1,0 +1,46 @@
+/* Container */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;              /* spacing between cards */
+  margin: 50px 20px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  width: 240px;
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Model name */
+.model-name {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Species text */
+.species {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Color styles */
+.green {
+  color: #00a86b;
+}
+
+.purple {
+  color: #7b2cbf;
+}

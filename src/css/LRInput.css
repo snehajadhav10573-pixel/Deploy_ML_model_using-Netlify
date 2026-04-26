@@ -1,0 +1,175 @@
+
+#input {
+ margin: 25px;
+  padding: 30px;
+  background: linear-gradient(135deg, #1A1A2E, #2A1B3D);
+  border-radius: 16px;
+  border: 1px solid #6C5CE7;
+  box-shadow: 0 0 10px rgba(108, 92, 231, 0.2);
+  transition: 0.3s ease;
+}
+
+
+#formulas {
+  background: linear-gradient(135deg, #3B0A6B, #6A1B9A, #8E24AA);
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 28px;
+  border-radius: 16px;
+  flex-wrap: wrap;
+}
+
+.icon-green {
+  color: #00C853; /* profit green */
+}
+
+.icon-red {
+  color: #FF3D00; /* error red */
+}
+
+.icon-purple {
+  color: #81c2e2; /* matches your theme */
+}
+
+/* Optional styling */
+i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.items {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 12px;
+  text-align:center;
+  width: 280px;
+  backdrop-filter: blur(10px);
+  transition: 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.267);
+}
+
+
+.items:hover {
+  transform: translateY(-8px) scale(1.03);
+  border: 1px solid #B388FF;
+  box-shadow: 0 0 20px rgba(179, 136, 255, 0.4);
+}
+
+#input:hover {
+
+  border: 1px solid #B388FF;
+  box-shadow: 0 0 15px rgba(180, 136, 255, 0.301);
+}
+.items h3 {
+  color: #DDD6FE;
+  font-weight: 780;
+  font-size: 18px;
+}
+
+
+.items p {
+  color: #EAEAF0;
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.5;
+font-weight: 650;
+}
+
+
+
+/* --- Columns Section --- */
+#data_columns {
+  margin-top: 30px;
+  background: #1A1A2E;
+  padding: 20px;
+  border-radius: 10px;
+  color: #C4B5FD;
+  text-align: center;
+  font-size: 25px;
+  border: 1px solid #6C5CE7;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#columnsTitle{
+    margin-right:100px;
+    
+}
+/* --- Select Dropdowns --- */
+#data_columns select {
+  background: rgba(255, 255, 255, 0.05);
+  color: #EAEAF0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 18px;
+  outline: none;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: 0.3s ease;
+  min-width: 350px;
+  margin:0 12px;
+  text-align: center;
+ 
+}
+
+/* Dropdown hover and focus */
+#data_columns select:hover {
+  border-color: #B388FF;
+  box-shadow: 0 0 8px rgba(179, 136, 255, 0.4);
+}
+
+#data_columns select:focus {
+  border-color: #6C5CE7;
+  box-shadow: 0 0 12px rgba(108, 92, 231, 0.6);
+}
+
+/* Option text styling */
+#data_columns select option {
+  border-radius: 20px;
+  background-color: #1A1A2E; /* dark background */
+  color: #EAEAF0;           /* light text */
+}
+
+/* On hover (works in some browsers) */
+#data_columns select option:hover {
+  border-radius: 20px;
+  background-color: #6C5CE7;
+  color: #fff;
+}
+
+.SubmitBtn{
+    text-align: center;
+}
+/* --- Light Red Button --- */
+button {
+  background: #ffffffcf; /* light red gradient */
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  width:1390px;
+  transition: 0.4s ease;
+  box-shadow: 0 4px 12px #ff4c4c4d;
+}
+
+button:hover {
+    background: white;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 14px #ff4c4c80;
+}
+
+button:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 3px 8px #ff4c4c4d;
+}
+

@@ -1,0 +1,35 @@
+/* Container */
+.graph-container {
+  margin: 25px;
+  padding: 30px;
+  background: linear-gradient(135deg, #1A1A2E, #2A1B3D);
+  border-radius: 16px;
+  border: 1px solid #6C5CE7;
+  box-shadow: 0 0 10px rgba(108, 92, 231, 0.2);
+  transition: 0.3s ease;
+  align-items: center;
+  
+}
+
+
+/* Hover effect */
+.graph-container:hover {
+  border-color: #B388FF;
+  box-shadow: 0 0 15px rgba(179, 136, 255, 0.4);
+}
+
+/* Heading */
+.graph-heading {
+  text-align: center;
+  margin: 15px;
+  font-size: 27px;
+  font-weight: 600;
+  color: #E9D5FF;
+}
+
+.graph-heading i {
+  margin-right: 8px;
+  font-size: 25px;
+  color:green;
+}
+
