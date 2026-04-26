@@ -20,7 +20,7 @@ function LR() {
     return;
   }
     // 🔥 Call Python backend
-    const res = await fetch("http://web-production-7b983.up.railway.app/LR_RF", {
+    const res = await fetch("https://web-production-7b983.up.railway.app/LR_RF", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
