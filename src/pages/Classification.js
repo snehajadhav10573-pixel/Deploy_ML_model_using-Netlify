@@ -8,7 +8,7 @@ function Classification() {
   const [predictions, setPredictions] = useState(null);
 
   const handlePredict = async (data) => {
-    const response = await fetch("http://web-production-7b983.up.railway.app/predict", {
+    const response = await fetch("https://web-production-7b983.up.railway.app/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
