@@ -10,11 +10,11 @@ import Navbar from "../Components/Navigation";
 function LR() {
   const Irisdata = useIrisData();
   const model=1;
-  const [selectedColumns, setSelectedColumns] = useState({ x: "", y: "" });
+  
   const [result, setResult] = useState(null); // 🔥 store backend result
 
   const handleColumnsSelect = async (cols) => {
-    setSelectedColumns(cols);
+
       if (!cols.x || !cols.y) {
     setResult(null);
     return;
