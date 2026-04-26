@@ -23,6 +23,7 @@ function Classification() {
       <Navbar />  {/* 👈 add this */}
       <InputForm onPredict={handlePredict} />
       <PredictionCards predictions={predictions} />
+       <MetricsDashboard />
       <ChartsDashboard />
     </div>
   );
