@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Navbar from "../Components/Navigation";  // 👈 add this
 import InputForm from "../Components/Classification/InputForm";
 import PredictionCards from "../Components/Classification/PredictionCards";
-import MetricsDashboard from "../Components/Classification/MetricsDashboard";
 import ChartsDashboard from "../Components/Classification/ChartsDashboard";
 
 function Classification() {
