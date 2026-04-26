@@ -44,7 +44,7 @@ function Comparison() {
     setLoading(true);
 
     const lrStart = performance.now();
-    const lrRes = await fetch("http://web-production-7b983.up.railway.app/LR_RF", {
+    const lrRes = await fetch("https://web-production-7b983.up.railway.app/LR_RF", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ data: irisData, xColumn: cfg.x, yColumn: cfg.y, model: 1 }),
@@ -54,7 +54,7 @@ function Comparison() {
     setLRResult(lrData);
 
     const rfStart = performance.now();
-    const rfRes = await fetch("http://web-production-7b983.up.railway.app/LR_RF", {
+    const rfRes = await fetch("https://web-production-7b983.up.railway.app/LR_RF", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ data: irisData, xColumn: cfg.x, yColumn: cfg.y, trees: cfg.trees, depth: cfg.depth, model: 2 }),
